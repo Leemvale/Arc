@@ -1,0 +1,15 @@
+# Dependencies, generated files and local data
+node_modules/
+dist/
+build/
+coverage/
+playwright-report/
+test-results/
+reports/
+pgdata/
+backups/
+package-lock.json
+
+# Installed agent instructions
+.agents/
+.codex/

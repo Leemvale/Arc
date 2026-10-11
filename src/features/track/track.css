@@ -1,0 +1,485 @@
+.welcome-banner {
+  position: relative;
+  overflow: hidden;
+  min-height: 300px;
+  border: 1px solid #b591e530;
+  border-radius: 18px;
+  background:
+    linear-gradient(90deg, #211d39f5 0%, #29203eb0 37%, #211d3900 75%),
+    url('/images/study-evening.png') center 52% / cover,
+    #302640;
+  padding: 38px;
+}
+.welcome-copy {
+  position: relative;
+  z-index: 1;
+}
+.welcome-copy .eyebrow {
+  color: #d5bedf;
+  font-size: 9px;
+}
+.welcome-copy h2 {
+  font-size: clamp(28px, 3vw, 39px);
+  line-height: 1.2;
+  letter-spacing: -1.1px;
+  margin: 20px 0 14px;
+}
+.welcome-copy h2 span {
+  color: #ffe0a5;
+}
+.welcome-copy p {
+  color: #d4c6de;
+  font-size: 13px;
+  line-height: 1.85;
+  margin: 0;
+}
+.scene-caption {
+  position: absolute;
+  right: 25px;
+  bottom: 20px;
+  font-size: 8px;
+  letter-spacing: 2.5px;
+  color: #f9eaff;
+  text-shadow: 0 1px 5px #17112b;
+}
+.track-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 270px;
+  gap: 24px;
+  margin-top: 26px;
+}
+.track-main,
+.track-aside {
+  min-width: 0;
+}
+.learning-card {
+  padding: 26px 28px;
+  background: linear-gradient(120deg, #fbfaff, #eef0fa);
+  color: #252341;
+  border: 1px solid #fff;
+  border-radius: 15px;
+  box-shadow: 0 12px 32px #060c201f;
+}
+.learning-card .section-heading {
+  margin-bottom: 14px;
+}
+.learning-card .eyebrow {
+  color: #746789;
+  margin: 0;
+  font-size: 9px;
+  letter-spacing: 1.3px;
+}
+.learning-card .pill {
+  margin: 0;
+  background: #eae3fa;
+  color: #7157a3;
+  font-size: 9px;
+  white-space: nowrap;
+}
+.track-title {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+}
+.track-title h1 {
+  font-size: clamp(23px, 2.1vw, 30px);
+  letter-spacing: -0.8px;
+  margin: 0;
+  line-height: 1.3;
+}
+.track-icon {
+  display: grid;
+  place-items: center;
+  width: 48px;
+  height: 48px;
+  flex-shrink: 0;
+  border-radius: 12px;
+  background: linear-gradient(145deg, #bd9ff5, #7351bf);
+  color: white;
+  box-shadow:
+    0 4px 10px #8152bc33,
+    inset 0 0 0 5px #ffffff1c;
+  font-size: 28px;
+}
+.learning-card .lead {
+  font-size: 13px;
+  color: #6b6b81;
+  margin: 18px 0;
+  line-height: 1.75;
+}
+.session-plan {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  padding: 14px 0;
+  border-block: 1px solid #e1dfea;
+  font-size: 11px;
+  color: #59556d;
+}
+.plan-icon {
+  color: #8165b5;
+  margin-right: 4px;
+}
+.learning-card .muted {
+  color: #78738a;
+  font-size: 10px;
+}
+.learning-card .primary {
+  background: linear-gradient(105deg, #b89af0, #bed7fb);
+  border-color: #bda2ed;
+  font-size: 12px;
+}
+.learning-card .primary:hover {
+  background: linear-gradient(105deg, #c6a9fc, #cce2ff);
+}
+.skills-section {
+  margin-top: 30px;
+  scroll-margin-top: 24px;
+}
+.skills-section .eyebrow {
+  font-size: 8px;
+  margin-bottom: 6px;
+  color: #929dbb;
+  letter-spacing: 1.3px;
+}
+.skills-section h2 {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+.count-badge {
+  font-size: 10px;
+  color: #b4a5d5;
+  padding: 3px 9px;
+  border: 1px solid #8e77bb36;
+  border-radius: 6px;
+}
+.skills {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+}
+.skill {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 16px;
+  min-height: 165px;
+  border: 1px solid #ffffff12;
+  border-radius: 12px;
+  background: linear-gradient(145deg, #2b2847, #1b2439 80%);
+}
+.skill-1 {
+  background: linear-gradient(145deg, #203449, #1b2439 80%);
+}
+.skill-2 {
+  background: linear-gradient(145deg, #2b2d46, #1b2439 80%);
+}
+.skill-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.skill-icon {
+  display: grid;
+  place-items: center;
+  width: 32px;
+  height: 32px;
+  border: 1px solid #b48ff53b;
+  border-radius: 9px;
+  color: #c3a6fd;
+  background: #a075e512;
+}
+.skill-1 .skill-icon {
+  color: #93d4ea;
+  border-color: #89cae333;
+  background: #75b2e512;
+}
+.skill-2 .skill-icon {
+  color: #b8b3f5;
+}
+.number {
+  color: #939ab5;
+  font-size: 10px;
+}
+.skill h3 {
+  font-size: 12px;
+  line-height: 1.55;
+  margin: 15px 0;
+}
+.skills-caption {
+  font-size: 10px;
+  color: #929db7;
+  margin: 13px 0 0;
+}
+.history-section {
+  margin-top: 30px;
+  scroll-margin-top: 24px;
+}
+.history-section h2 {
+  font-size: 20px;
+}
+.history-section .section-heading > svg {
+  color: #a38acb;
+}
+.empty {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  background: #ffffff03;
+  border: 1px dashed #ffffff20;
+  padding: 22px;
+  border-radius: 12px;
+}
+.empty-icon {
+  color: #ae95d6;
+  background: #a488db12;
+  border-radius: 10px;
+  padding: 11px;
+  display: flex;
+}
+.empty strong {
+  font-size: 12px;
+  font-weight: 500;
+  color: #d7dced;
+}
+.empty p {
+  font-size: 11px;
+  color: #929cb7;
+  margin: 5px 0 0;
+}
+.history a {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 16px;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  margin-bottom: 8px;
+  text-decoration: none;
+  background: #1b263b;
+  font-size: 12px;
+}
+.history a:hover {
+  border-color: #a68acf;
+  background: #253049;
+}
+.journey-card {
+  border: 1px solid #ffffff14;
+  background: linear-gradient(140deg, #272841, #1c263c);
+  padding: 24px 20px;
+  border-radius: 15px;
+  text-align: center;
+}
+.journey-card .eyebrow {
+  font-size: 9px;
+  margin-bottom: 10px;
+}
+.journey-card h2 {
+  font-size: 17px;
+}
+.journey-orbit {
+  position: relative;
+  display: grid;
+  place-items: center;
+  width: 112px;
+  height: 112px;
+  margin: 24px auto;
+  border: 1px solid #9e82eb47;
+  outline: 1px solid #9e82eb17;
+  outline-offset: 10px;
+  border-radius: 50%;
+  background: radial-gradient(circle, #9979e451, #9576e508 66%);
+}
+.journey-orbit::after {
+  content: '';
+  position: absolute;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #cba6ff;
+  right: 5px;
+  top: 20px;
+  box-shadow: 0 0 15px #cba6ff;
+}
+.journey-orbit svg {
+  width: 42px;
+  height: 42px;
+  color: #d0b5ff;
+  filter: drop-shadow(0 0 10px #b17bfa);
+}
+.journey-stats {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 30px;
+}
+.journey-stats > div + div {
+  border-left: 1px solid #ffffff14;
+}
+.journey-stats strong {
+  display: block;
+  font-size: 26px;
+  font-weight: 650;
+  line-height: 1.2;
+}
+.journey-stats span {
+  font-size: 9px;
+  color: #aeb4ce;
+}
+.journey-card > p {
+  font-size: 11px;
+  color: #aeb4ce;
+  margin: 22px 0 0;
+  padding-top: 18px;
+  border-top: 1px solid #ffffff10;
+}
+.inspiration-card {
+  display: flex;
+  align-items: flex-end;
+  min-height: 275px;
+  margin-top: 20px;
+  border-radius: 14px;
+  border: 1px solid #c8a4e329;
+  overflow: hidden;
+  background:
+    linear-gradient(0deg, #171e35 2%, #171e3590 45%, transparent 100%),
+    url('/images/study-evening.png') 85% center / auto 100%;
+  padding: 22px;
+}
+.inspiration-card .eyebrow {
+  font-size: 8px;
+  color: #dfc7ef;
+  margin-bottom: 8px;
+}
+.inspiration-card h2 {
+  font-size: 20px;
+  line-height: 1.5;
+  text-shadow: 0 2px 12px #15182e;
+  margin-bottom: 10px;
+}
+.inspiration-card div > span:last-child {
+  font-size: 9px;
+  color: #c0bdd5;
+}
+.gentle-note {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin: 24px 8px;
+  color: #c2a7e7;
+}
+.gentle-note svg {
+  flex-shrink: 0;
+  margin-top: 4px;
+  width: 16px;
+}
+.gentle-note p {
+  font-size: 11px;
+  margin: 0;
+}
+.gentle-note span {
+  color: #8f9ab5;
+  font-size: 10px;
+}
+@media (max-width: 1150px) {
+  .track-layout {
+    grid-template-columns: minmax(0, 1fr) 230px;
+    gap: 18px;
+  }
+  .learning-card {
+    padding: 22px;
+  }
+  .skills {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .learning-card .section-heading {
+    align-items: flex-start;
+  }
+}
+@media (max-width: 980px) {
+  .track-layout {
+    grid-template-columns: 1fr;
+  }
+  .track-aside {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 18px;
+  }
+  .inspiration-card {
+    margin: 0;
+  }
+  .gentle-note {
+    grid-column: 1 / -1;
+    margin: 0;
+  }
+  .skills {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+@media (max-width: 560px) {
+  .welcome-banner {
+    min-height: 275px;
+    padding: 26px 22px;
+    background-position:
+      center,
+      64% center;
+  }
+  .welcome-copy .eyebrow {
+    font-size: 7px;
+    letter-spacing: 1px;
+  }
+  .welcome-copy p {
+    font-size: 12px;
+  }
+  .scene-caption {
+    display: none;
+  }
+  .track-layout {
+    margin-top: 18px;
+  }
+  .learning-card {
+    padding: 22px 18px;
+  }
+  .learning-card .section-heading {
+    flex-wrap: wrap;
+    gap: 9px;
+  }
+  .track-title {
+    gap: 12px;
+  }
+  .track-title h1 {
+    font-size: 23px;
+  }
+  .track-icon {
+    width: 39px;
+    height: 39px;
+    font-size: 23px;
+  }
+  .learning-card .start-row {
+    gap: 12px;
+  }
+  .learning-card .primary {
+    width: 100%;
+  }
+  .session-plan {
+    gap: 10px 14px;
+  }
+  .skills {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px;
+  }
+  .skill {
+    padding: 14px;
+  }
+  .track-aside {
+    grid-template-columns: 1fr;
+  }
+  .inspiration-card {
+    min-height: 220px;
+    background-size: cover;
+  }
+  .empty {
+    padding: 18px 14px;
+    gap: 12px;
+  }
+}
